@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio | Dev KI</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">🐉 DEV<span>KI</span></div>
+    <nav id="nav-menu">
+      <a href="#perfil">Perfil</a>
+      <a href="#habilidades">Ki / Skills</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button id="theme-toggle" class="btn-ki">Modo Super Saiyan 🔥</button>
+  </header>
+
+  <section id="perfil" class="hero">
+    <div class="hero-content">
+      <span class="badge">Nivel de Poder en Crecimiento 🚀</span>
+      <h1>¡Hola! Soy Desarrollador/a & Specialist en Hardware</h1>
+      <p class="bio">
+        Apasionado/a por la tecnología, el código y el armado de equipos de alto rendimiento. 
+        En constante entrenamiento para superar mis límites, dominar el desarrollo web 
+        y ensamblar las mejores arquitecturas tanto en software como en hardware.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contacto" class="btn-primary">Contactar</a>
+        <a href="https://linkedin.com" target="_blank" class="btn-secondary">LinkedIn 🔗</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades" class="container">
+    <h2>🧰 Nivel de Ki & Habilidades</h2>
+    <p class="subtitle">Mi radar de habilidades actual según mi proceso de formación:</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card highlight">
+        <div class="skill-info">
+          <span>🛠️ Hardware y Armado de Equipos</span>
+          <span>95%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 95%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-info">
+          <span>⚡ JavaScript</span>
+          <span>75%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 75%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-info">
+          <span>🌐 HTML5</span>
+          <span>70%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 70%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-info">
+          <span>🎨 CSS3</span>
+          <span>65%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 65%;"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-info">
+          <span>🐙 Git & GitHub</span>
+          <span>70%</span>
+        </div>
+        <div class="bar"><div class="progress" style="width: 70%;"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="proyectos" class="container">
+    <h2>📂 Mis Proyectos</h2>
+
+    <div class="projects-grid">
+      
+      <article class="project-card">
+        <div class="project-img">🧠 App-Neuro-Mundo</div>
+        <div class="project-content">
+          <h3>App-Neuro-Mundo</h3>
+          <p>
+            Aplicación desarrollada para explorar conceptos interactivos sobre neurociencia / desarrollo web.
+            Un proyecto clave en mi formación para integrar lógica de programación y experiencia de usuario.
+          </p>
+
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Demostración App Neuro Mundo" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Iris014/App-Neuro-Mundo" target="_blank" class="btn-link">Ver en GitHub 🐙</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-img">🖥️ Hardware Lab</div>
+        <div class="project-content">
+          <h3>Optimización & Ensamblado de Hardware</h3>
+          <p>
+            Documentación y proyectos prácticos de selección de componentes, optimización de flujo de aire, 
+            mantenimiento preventivo y diagnóstico técnico de computadores de alto rendimiento.
+          </p>
+          <div class="tags">
+            <span>Hardware</span>
+            <span>Ensamblado</span>
+            <span>Benchmarking</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Iris014" target="_blank" class="btn-link">Ver Repositorio 🐙</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="container">
+    <h2>💼 Contacto Profesional</h2>
+    <p>¿Tienes un proyecto, consulta técnica o propuesta laboral? ¡Envíame un mensaje!</p>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p>📧 <strong>Correo:</strong> <a href="mailto:tu.correo.profesional@gmail.com">tu.correo.profesional@gmail.com</a></p>
+        <p>🔗 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tu-perfil" target="_blank">linkedin.com/in/tu-perfil</a></p>
+        <p>🐙 <strong>GitHub:</strong> <a href="https://github.com/Iris014" target="_blank">github.com/Iris014</a></p>
+      </div>
+
+      <form id="contact-form" class="form">
+        <input type="text" id="nombre" placeholder="Tu Nombre" required>
+        <input type="email" id="email" placeholder="Tu Correo Electrónico" required>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
+        <button type="submit" class="btn-primary">Enviar Radar 📡</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 - Desarrollado con 🐉 Ki & Código. Listo para la entrega de Skillnest.</p>
+  </footer>
+
+  <script src="static/js/script.js"></script>
+</body>
+</html>
