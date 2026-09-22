@@ -1,41 +1,24 @@
-const themeBtn = document.getElementById('theme-toggle');
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
 
-themeBtn.addEventListener('click', () => {
-  document.body.classList.toggle('super-saiyan');
-  
-  if (document.body.classList.contains('super-saiyan')) {
-    themeBtn.textContent = 'Modo Base ⚡';
-  } else {
-    themeBtn.textContent = 'Modo Super Saiyan 🔥';
-  }
-});
+    themeToggleBtn.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+        
+        if (body.classList.contains('light-mode')) {
+            themeToggleBtn.textContent = 'Modo Oscuro 🌙';
+        } else {
+            themeToggleBtn.textContent = 'Modo Claro ☀️';
+        }
+    });
 
-const form = document.getElementById('contact-form');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const nombre = document.getElementById('nombre').value;
-  
-  alert(`¡Mensaje recibido, ${nombre}! El radar ha enviado tu información correctamente.`);
-  form.reset();
-});const themeBtn = document.getElementById('theme-toggle');
-
-themeBtn.addEventListener('click', () => {
-  document.body.classList.toggle('super-saiyan');
-  
-  if (document.body.classList.contains('super-saiyan')) {
-    themeBtn.textContent = 'Modo Base ⚡';
-  } else {
-    themeBtn.textContent = 'Modo Super Saiyan 🔥';
-  }
-});
-
-const form = document.getElementById('contact-form');
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const nombre = document.getElementById('nombre').value;
-  
-  alert(`¡Mensaje recibido, ${nombre}! El radar ha enviado tu información correctamente.`);
-  form.reset();
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            alert(`Gracias ${nombre}, tu mensaje ha sido enviado correctamente.`);
+            contactForm.reset();
+        });
+    }
 });
