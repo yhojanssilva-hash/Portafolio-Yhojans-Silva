@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
 
-    themeToggleBtn.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
-        
-        if (body.classList.contains('light-mode')) {
-            themeToggleBtn.textContent = 'Modo Oscuro 🌙';
-        } else {
-            themeToggleBtn.textContent = 'Modo Claro ☀️';
-        }
-    });
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+
+            if (document.body.classList.contains('light-theme')) {
+                themeToggleBtn.textContent = 'Modo Oscuro 🌙';
+            } else {
+                themeToggleBtn.textContent = 'Modo Claro ☀️';
+            }
+        });
+    }
 
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const nombre = document.getElementById('nombre').value;
-            alert(`Gracias ${nombre}, tu mensaje ha sido enviado correctamente.`);
+            alert('¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.');
             contactForm.reset();
         });
     }
