@@ -4,157 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Yhojans Silva - Desarrollador & Especialista en Hardware</title>
+    <title>Yhojans Silva — Dev & Hardware Specialist</title>
     <link rel="stylesheet" href="static/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">YHOJANS<span>SILVA</span></div>
-        <nav>
-            <a href="#perfil">Perfil</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+    <header class="top-nav">
+        <div class="logo">
+            <span class="punto-color"></span> YHOJANS SILVA
+        </div>
+        <nav class="menu">
+            <a href="#perfil">// Perfil</a>
+            <a href="#habilidades">// Stack</a>
+            <a href="#proyectos">// Proyectos</a>
+            <a href="#contacto">// Contacto</a>
         </nav>
-        <button id="theme-toggle" class="btn-theme">Modo Claro ☀️</button>
+        <button id="theme-toggle" class="cambio-tema">Modo Claro ☀️</button>
     </header>
 
-    <section id="perfil" class="hero">
-        <div class="hero-content">
-            <span class="badge">Desarrollo Web & Hardware Specialist</span>
-            <h1>Yhojans Silva</h1>
-            <h2 style="font-size: 1.5rem; color: #38bdf8; margin-bottom: 15px;">Desarrollador Software & Especialista en Infraestructura</h2>
-            <p class="bio">
-                Especializado en el desarrollo de aplicaciones web modernas, optimización de sistemas 
-                y ensamblado de arquitectura de hardware de alto rendimiento. Enfoque centrado en código limpio, 
-                eficiencia y soluciones escalables.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contacto" class="btn-primary">Contacto</a>
-                <a href="https://www.linkedin.com/in/yhojans-gabriel-silva-mu%C3%B1oz-a41590439/" target="_blank" class="btn-secondary">LinkedIn</a>
-            </div>
-        </div>
-    </section>
+    <main>
 
-    <section id="habilidades" class="container">
-        <h2>Habilidades Técnicas</h2>
-        <p class="subtitle">Tecnologías y áreas de especialización:</p>
-
-        <div class="skills-grid">
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>Hardware & Ensamblado de Equipos</span>
-                    <span>95%</span>
+        <section id="perfil" class="seccion-principal">
+            <div class="contenedor-perfil">
+                <div class="dispo">
+                    <span class="puntos"></span> Disponible para Proyectos & Infraestructura
                 </div>
-                <div class="bar">
-                    <div class="progress" style="width: 95%;"></div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>JavaScript (ES6+)</span>
-                    <span>80%</span>
-                </div>
-                <div class="bar">
-                    <div class="progress" style="width: 80%;"></div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>HTML5 / CSS3</span>
-                    <span>85%</span>
-                </div>
-                <div class="bar">
-                    <div class="progress" style="width: 85%;"></div>
-                </div>
-            </div>
-
-            <div class="skill-card">
-                <div class="skill-info">
-                    <span>Git & GitHub</span>
-                    <span>75%</span>
-                </div>
-                <div class="bar">
-                    <div class="progress" style="width: 75%;"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="proyectos" class="container">
-        <h2>Proyectos Destacados</h2>
-
-        <div class="projects-grid">
-            <article class="project-card">
-                <h3>App Neuro Mundo</h3>
-                <p>
-                    Plataforma interactiva orientada a la divulgación de conceptos clave sobre neurociencia y desarrollo web interactivo. Integración de lógica de programación y experiencia de usuario.
+                <h1>Arquitectura de Hardware <br>& Desarrollo Web</h1>
+                <p class="desc-personal">
+                    Hola, soy <strong>Yhojans Silva</strong>. Me especializo en la convergencia entre el desarrollo de software y la infraestructura física. Creo aplicaciones web funcionales y optimizo plataformas de hardware para máximo rendimiento.
                 </p>
-
-                <div class="video-container" style="margin: 15px 0;">
-                    <video controls style="width: 100%; max-height: 250px; border-radius: 8px; background-color: #000;">
-                        <source src="static/videos/neo.mp4" type="video/mp4">
-                        Tu navegador no soporta la reproducción de este video.
-                    </video>
+                <div class="acciones-btn">
+                    <a href="#contacto" class="btn-principal">Iniciar Contacto</a>
+                    <a href="https://www.linkedin.com/in/yhojans-silva-69a681439/" target="_blank" class="btn-sec">LinkedIn Profile ↗</a>
                 </div>
+            </div>
+        </section>
 
-                <div class="tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/Iris014/App-Neuro-Mundo" target="_blank" class="btn-link">Ver en GitHub</a>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <h3>Laboratorio de Hardware & Benchmarking</h3>
-                <p>
-                    Documentación técnica sobre selección de componentes, optimización de flujo térmico, mantenimiento preventivo y diagnóstico técnico de estaciones de trabajo.
-                </p>
-
-                <div class="img-container" style="margin: 15px 0;">
-                    <img src="static/images/img.png" alt="Desensamblado de Hardware" style="width: 100%; max-height: 250px; object-fit: cover; border-radius: 8px; border: 1px solid #334155;">
-                </div>
-
-                <div class="tags">
-                    <span>Hardware</span>
-                    <span>Diagnóstico</span>
-                    <span>Benchmarking</span>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section id="contacto" class="container">
-        <h2>Contacto Profesional</h2>
-        <p>¿Interesado en colaborar o consultar sobre algún proyecto? Envía un mensaje a continuación.</p>
-
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <p><strong>Nombre:</strong> Yhojans Silva</p>
-                <p><strong>Correo:</strong> <a href="mailto:yhojans2009@gmail.com">yhojans2009@gmail.com</a></p>
-                <p><strong>Teléfono / WhatsApp:</strong> <a href="https://wa.me/56950492135" target="_blank">+56 9 5049 2135</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/Iris014" target="_blank">github.com/Iris014</a></p>
+        <section id="habilidades" class="contenedor-seccion">
+            <div class="titulo-num">
+                <span class="num">01.</span>
+                <h2>Competencias Técnicas</h2>
             </div>
 
-            <form id="contact-form" class="form">
-                <input type="text" id="nombre" placeholder="Nombre completo" required>
-                <input type="email" id="email" placeholder="Correo electrónico" required>
-                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." rows="4" required></textarea>
-                <button type="submit" class="btn-primary">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
+            <div class="hab-cont">
+                <div class="hab-individuales">
+                    <div class="text-superior">
+                        <span class="hab-nombre">Hardware & Ensamblado de Equipos</span>
+                        <span class="porcentaje-num">95%</span>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="relleno" style="width: 95%;"></div>
+                    </div>
+                </div>
 
-    <footer>
-        <p>© 2026 - Portafolio Profesional de Yhojans Silva.</p>
+                <div class="hab-individuales">
+                    <div class="text-superior">
+                        <span class="hab-nombre">JavaScript (ES6+)</span>
+                        <span class="porcentaje-num">75%</span>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="relleno" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="hab-individuales">
+                    <div class="text-superior">
+                        <span class="hab-nombre">HTML5 / CSS3</span>
+                        <span class="porcentaje-num">65%</span>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="relleno" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+                <div class="hab-individuales">
+                    <div class="text-superior">
+                        <span class="hab-nombre">Git & GitHub</span>
+                        <span class="porcentaje-num">60%</span>
+                    </div>
+                    <div class="fondo-barra">
+                        <div class="relleno" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="contenedor-seccion">
+            <div class="titulo-num">
+                <span class="num">02.</span>
+                <h2>Proyectos Destacados</h2>
+            </div>
+
+            <div class="portafolio">
+
+                <article class="portfolio-ind">
+                    <div class="cont-video">
+                        <img src="static/images/img.png" alt="Laboratorio de Hardware">
+                    </div>
+                    <div class="text-card">
+                        <span class="categorias">Infraestructura & Hardware</span>
+                        <h3>Laboratorio de Hardware & Benchmarking</h3>
+                        <p>
+                            Documentación y aplicación técnica sobre selección de componentes, optimización de flujo térmico, mantenimiento preventivo y diagnóstico profundo de estaciones de trabajo.
+                        </p>
+                        <div class="cont-tech">
+                            <span>Hardware</span>
+                            <span>Diagnóstico</span>
+                            <span>Benchmarking</span>
+                        </div>
+                        <a href="https://github.com/yhojanssilva-hash/Portafolio-Yhojans-Silva" target="_blank" class="enlare-repositorio">Explorar Repositorio ↗</a>
+                    </div>
+                </article>
+
+                <article class="portfolio-ind">
+                    <div class="cont-video">
+                        <video controls poster="">
+                            <source src="static/videos/neo.mp4" type="video/mp4">
+                            Tu navegador no soporta video.
+                        </video>
+                    </div>
+                    <div class="text-card">
+                        <span class="categorias">Desarrollo Web</span>
+                        <h3>App Neuro Mundo</h3>
+                        <p>
+                            Plataforma web interactiva orientada a la divulgación sobre neurociencia. Integración de lógica en JavaScript, manipulación del DOM y diseño adaptativo.
+                        </p>
+                        <div class="cont-tech">
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <a href="https://github.com/Iris014/App-Neuro-Mundo" target="_blank" class="enlare-repositorio">Ver Código en GitHub ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="contacto" class="contenedor-seccion">
+            <div class="titulo-num">
+                <span class="num">03.</span>
+                <h2>Contacto</h2>
+            </div>
+
+            <div class="contactos">
+                <div class="datos-personales">
+                    <h3>¿Iniciamos un proyecto?</h3>
+                    <p>Puedes escribirme directamente si necesitas consultoría técnica, armado de equipos o desarrollo web.</p>
+                    
+                    <div class="lista-enlaces">
+                        <div class="info-filas">
+                            <span class="datos-etiquetas">Email:</span>
+                            <a href="mailto:yhojans2009@gmail.com">yhojans2009@gmail.com</a>
+                        </div>
+                        <div class="info-filas">
+                            <span class="datos-etiquetas">WhatsApp:</span>
+                            <a href="https://wa.me/56950492135" target="_blank">+56 9 5049 2135</a>
+                        </div>
+                        <div class="info-filas">
+                            <span class="datos-etiquetas">GitHub:</span>
+                            <a href="https://github.com/yhojanssilva-hash" target="_blank">github.com/yhojanssilva-hash</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="formulario-mensajes">
+                    <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                    <textarea id="mensaje" placeholder="Escribe tu mensaje o detalles de la consulta..." rows="4" required></textarea>
+                    <button type="submit" class="btn-principal">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Yhojans Silva — Especialista en Dev & Hardware.</p>
     </footer>
 
     <script src="static/js/script.js"></script>
